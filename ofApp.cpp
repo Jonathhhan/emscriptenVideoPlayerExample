@@ -34,7 +34,6 @@ void ofApp::draw(){
     ofDrawBitmapString("press space for pause",20,500);
     ofDrawBitmapString("press mouse on blue rectangle for file browser",20,550);
     
-
     if(videoPlayer.getIsMovieDone()){
         ofSetHexColor(0xFF0000);
         ofDrawBitmapString("end of movie",20,440);
