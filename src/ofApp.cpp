@@ -70,6 +70,9 @@ void ofApp::mouseDragged(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::mousePressed(int x, int y, int button){
 	isMousePressed = true;
+	if(isMousePressed){
+        	videoPlayer.setPaused(true);
+	}
 	int width = ofGetWidth();
 	float pct = (float)x / (float)width;
 	videoPlayer.setPosition(pct);
@@ -82,6 +85,9 @@ void ofApp::mousePressed(int x, int y, int button){
 //--------------------------------------------------------------
 void ofApp::mouseReleased(int x, int y, int button){
 	isMousePressed = false;
+	if(!isMousePressed){
+        	videoPlayer.setPaused(false);
+	}
 }
 
 //--------------------------------------------------------------
