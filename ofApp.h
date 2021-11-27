@@ -24,7 +24,7 @@ class ofApp : public ofBaseApp{
 
 		ofVideoPlayer 		videoPlayer;
 		ofTexture		texture;
-		bool           	isPaused;
+		bool           		isPaused;
 		bool			isMousePressed;
 };
 
