@@ -30,9 +30,11 @@ void ofApp::draw(){
     ofDrawRectangle(500, 320, 100, 100);
     ofSetHexColor(0x000000);
 
-    ofDrawBitmapString("duration: " + ofToString(videoPlayer.getPosition()*videoPlayer.getDuration(),2) + "/"+ofToString(videoPlayer.getDuration(),2),20,450);
-    ofDrawBitmapString("press space for pause",20,500);
-    ofDrawBitmapString("press mouse on blue rectangle for file browser",20,550);
+    ofDrawBitmapString("duration: " + ofToString(videoPlayer.getPosition()*videoPlayer.getDuration(),2) + "/"+ofToString(videoPlayer.getDuration(),2), 20, 450);
+    ofDrawBitmapString("press space for pause", 20, 500);
+    ofDrawBitmapString("click or drag mouse for position", 20, 550);
+    ofDrawBitmapString("press mouse on blue rectangle for file browser", 20, 600);
+    ofDrawBitmapString("drag video on window", 20, 650);
     
     if(videoPlayer.getIsMovieDone()){
         ofSetHexColor(0xFF0000);
